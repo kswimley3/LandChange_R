@@ -6,7 +6,6 @@
 renv::install("tidyverse") # general tools for data manipulation
 renv::install("terra")     # a newer spatial package? doesn't seem like the best
 renv::install("raster")    # used to import and work with raster data
-# renv::install("stars")     # another option for raster data, need to test this
 renv::install("sf")        # used for gis vector data manipulation
 renv::install("tidyterra") # tidyverse support for terra objects
 
@@ -112,7 +111,7 @@ renv::install("tidyterra") # tidyverse support for terra objects
 # - yaml          [2.3.12]
 
 # note: use renv::update() to get latest versions of all dependencies
-
+# note: use renv::snapshot() to update snapshot of used packages
 
 # folder creation ====
 dir.create("./output")
